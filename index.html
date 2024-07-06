@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>landing page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <style>
+        body{ background-color: #FFFFF0;}
+        .header{ background-color: #FFFFF0; width: 100%; height: 100px; display:grid; grid-template-columns: 150px 1fr;}
+        .name{ text-transform: capitalize; text-align: center; color: #191970; display: block; justify-content: ;}
+        .pic1{ width: 150px; height: 100px;}
+        #head{justify-content: left; text-align: center; display: flex; ;}
+        p{ color: #191970; font-size: 15pt; margin-left: 10px;}
+       #pic2{ width: 100%; margin-top: 30px; max-width: 1000px; max-height: 600px;}   
+       .pic2{ display: flex; justify-content: center;}
+        #team{ display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 50px;}
+        .pst{ width: 95%; border: black solid 3px; height: 20vw;overflow: hidden;}
+        .team{ text-align: center; margin-top: 50px;}
+        h3{ margin-left: 10px;}
+        #tc{ color: #000000;margin-top: 10px;}
+        #yt{ color: red; }
+        .social{ font-size: 23pt; background-color: #4682B4;height: 50px; justify-items: center;}
+        @media (min-width:300px) and (max-width:600px){
+         #team{display: grid; grid-template-columns: 1fr;grid-template-rows: ;}   
+         .pst{height: 250px; width: 300px; align-items: center;}
+        }
+        @media (min-width:601px) and (max-width:900px){
+         #team{display: grid; grid-template-columns: 1fr 1fr;}   
+        }
+        .pst{ display: flex;justify-content: center; height: 200px;}
+    </style>
+</head>
+<body>
+<div class="outline">
+    <div class="header">
+        <div class="logo"><img class="pic1" src="trc.jpg" alt=""></div> 
+        <div class="name"><h1>transformation cenrer church</h1></div>
+    </div>
+        <div id="head">
+            <div class="home"> <p>home</p></div> 
+            <div class="about">  <p>about</p></div> 
+            <div class="branches"> <p>branch</p></div>
+            <div class="contact"> <p>contact</p></div>        
+        </div>
+        <div class="pic2"><img id="pic2" src="church.jpg" alt=""></div> <hr>
+            <div class="team"><h2>OUR PASTORS</h2></div>
+            <div id="team"> 
+            <div> <img class="pst" src="ken.jpg" alt=""><h3>Pst.Ken Ogalle</h3><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde maxime iusto laudantium quidem reiciendis quod aliquid quae accusamus vel provident!</p></div>
+            <div> <img class="pst" src="cathy.jpg" alt=""><h3>Pst. Cathy Ogalle</h3><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure porro ipsa impedit quo, tenetur veniam.</p></div>
+            <div> <img class="pst" src="hez.jpg" alt=""><h3>Pst. Hezron</h3><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia vero ut at quis!</p></div>
+            <div> <img class="pst" src="naomi.jpg" alt=""><h3>Pst. Naomi Mwangi</h3><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita molestiae eaque reprehenderit.</p></div>
+        </div> <hr>
+        <div class="social">
+            <i class="fa-brands fa-square-facebook"></i>
+            <a href="https://www.youtube.com/@kenogalle"><i id="yt" class="fa-brands fa-youtube"></i></a>
+            <a href="https://www.tiktok.com/@ww.trc?lang=en"><i id="tc" class="fa-brands fa-tiktok" ></i></a></i>
+        </div>
+        
+    
+</div>   
+    
+</body>
+</html>
